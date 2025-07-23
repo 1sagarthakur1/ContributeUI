@@ -1,0 +1,77 @@
+.left_container {
+  margin: 5px;
+  border-radius: 5px;
+  min-width: 210px;
+  padding: 10px;
+  box-shadow: 2px 2px 2px rgb(255, 255, 255);
+  height: calc(100vh - 50px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #010d51e3;
+}
+
+.left_container::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+ .left_container::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.left_container::-webkit-scrollbar-thumb {
+  background: rgb(252, 0, 0); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.left_container::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+
+.addTopDivButton {
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-size: 10px;
+  justify-content: center;
+  line-height: 1em;
+  min-width: 100px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.addTopDivButton:active,
+.addTopDivButton:hover {
+  outline: 0;
+}
+
+.addTopDivButton span {
+  background-color: rgb(5, 6, 45);
+  padding: 10px 10px;
+  border-radius: 6px;
+  /* width: 100%;
+  height: 100%; */
+  transition: 300ms;
+}
+
+.addTopDivButton:hover span {
+  background: none;
+}
+
+.addTopDivButton:active {
+  transform: scale(0.9);
+}

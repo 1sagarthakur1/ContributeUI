@@ -1,0 +1,91 @@
+.deleteElementButton {
+  position: relative;
+  width: 90px;
+  height: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #cc0000;
+  background-color: #e50000;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.deleteElementButton, .deleteElementButton__icon, .deleteElementButton__text {
+  transition: all 0.3s;
+}
+
+.deleteElementButton .deleteElementButton__text {
+  transform: translateX(20px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.deleteElementButton .deleteElementButton__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: #cc0000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deleteElementButton .svg {
+  width: 15px;
+}
+
+.deleteElementButton:hover {
+  background: #cc0000;
+}
+
+.deleteElementButton:hover .deleteElementButton__text {
+  color: transparent;
+}
+
+.deleteElementButton:hover .deleteElementButton__icon {
+  width: 70px;
+  transform: translateX(0);
+}
+
+.deleteElementButton:active .deleteElementButton__icon {
+  background-color: #b20000;
+}
+
+.deleteElementButton:active {
+  border: 1px solid #b20000;
+}
+
+
+/* Get Code Button */
+.get-code-btn {
+  /* padding: 10px 20px; */
+  font-size: 13px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.get-code-btn:hover {
+  background: linear-gradient(135deg, #2980b9, #3498db);
+  transform: scale(1.05);
+}
+
+.get-code-btn.glow {
+  animation: glowPulse 1s infinite alternate;
+}
+
+@keyframes glowPulse {
+  from {
+    box-shadow: 0 0 8px 4px rgba(0, 255, 255, 0.5);
+  }
+  to {
+    box-shadow: 0 0 18px 8px rgba(0, 255, 255, 0.9);
+  }
+}

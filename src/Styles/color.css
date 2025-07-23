@@ -1,0 +1,115 @@
+.colorContainer_maindiv {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* background-color: aqua; */
+}
+
+.colorInput_div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.colorInput_div>input:nth-child(1)[type="color"] {
+    border: 1px solid gray;
+    height: 40px;
+    width: 40px;
+    /* border-radius: 20px; */
+    background-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    /* appearance: none; */
+}
+
+.colorInput_div>input:nth-child(1)[type="color"]::-webkit-color-swatch {
+    border-radius: 15px;
+    border: 1px solid gray;
+}
+
+.colorInput_div>input:nth-child(1)[type="color"]::-moz-color-swatch {
+    border-radius: 15px;
+    border: none;
+}
+
+.colorInput_div>input:nth-child(2) {
+    width: 100px;
+    background-color: greenyellow;
+    border: 1px solid gray;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.colorButton_div {
+    display: flex;
+    align-items: center;
+    padding:3px 0px;
+}
+
+.colorButton_div>button {
+    border: 0px;
+    color: gray;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.colorShower {
+    width: 100%;
+    height: 20px;
+}
+
+.colorSideButton_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.colorSideButton_div>div {
+    height: 40px;
+    width: 40px;
+    background-color: rgb(222, 216, 216);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 2px solid rgb(222, 216, 216);
+}
+
+.colorPercent_input>div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.colorPercent_input>div>div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.colorPercent_input>div>label {
+    font-size: .7rem;
+    color:rgb(206, 203, 203);
+}
+
+.colorPercent_input>div>div>input {
+    height: 5px;
+}
+
+.colorPercent_input>div>div>p {
+    margin: 0px;
+    font-size: .7rem;
+    color:rgb(206, 203, 203);
+}
+.borderDiv{
+    flex-direction: column;
+    align-items: flex-start;
+}

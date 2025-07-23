@@ -1,0 +1,31 @@
+.renderTree {
+    background-color: white;
+    flex-grow: 1;
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.renderTree::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* Track */
+.renderTree::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+.renderTree::-webkit-scrollbar-thumb {
+    background: rgb(252, 0, 0);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.renderTree::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}

@@ -1,0 +1,439 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('../Images/Home/bg-with-water-rotate.png');
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* position: relative; */
+}
+.navbar{
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Upper-navbar part */
+.Upper-navbar{
+    display: flex;
+    height: 70px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+/* lower-navbar */
+.lower-navbar{
+    height: 40px;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background-color: rgba(255, 255, 255, 0.263);
+    position: absolute;
+    z-index: 9;
+    top: 70px;
+    width: 100%;
+}
+
+#logoImg{
+    position: absolute;
+    width: 200px;
+    top: 15px;
+    margin: 0px 0px 20px 15px;
+}
+.middile-container-home{
+    width: 100%;
+    /* background-repeat: no-repeat; */
+    /* background-size:cover; */
+    background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8), rgb(0, 0, 0));
+}
+
+
+.containt_container{
+    /* height: 600px; */
+    background-color:#000000;
+}
+
+/* search_singIn part */
+.search_singIn{
+    display: flex;
+    gap: 10px;
+}
+
+/* search css */
+.inputSearchBar {
+    border: 3px solid transparent;
+    width: 30em;
+    height: 2.5em;
+    padding-left: 0.8em;
+    outline: none;
+    overflow: hidden;
+    background-color: #F3F3F3;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+
+.inputSearchBar:hover,
+.inputSearchBar:focus {
+    border: 3px solid #4A9DEC;
+    box-shadow: 0px 0px 0px 7px rgba(255, 255, 255, 0.308);
+    background-color: white;
+}
+
+.search_bar{
+    border: 3px solid transparent;
+    width: 30em;
+    height: 2em;
+    padding-left: 0.8em;
+    outline: none;
+    overflow: hidden;
+    background-color: #F3F3F3;
+    transition: all 0.5s;
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    display: none;
+    border-radius:20px;
+    /* margin: auto; */
+}
+.search_bar:hover,
+.search_bar:focus {
+    border: 3px solid #4A9DEC;
+    box-shadow: 0px 0px 0px 7px rgba(255, 255, 255, 0.308);
+    background-color: white;
+}
+.next_search_bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#searchIcons{
+    width:1.2em;
+    display: none;
+}
+
+.signIn{
+    display: flex;
+    border: 3px solid white;
+    align-items: center;
+    justify-content: center;
+    border-radius:20px;
+    gap:10px;
+    padding: 5px;
+    width: 125px;
+    height: 40px;
+    background-color: transparent;
+}
+
+.signIn:hover,
+.signIn:focus {
+    border: 3px solid #4A9DEC;
+    box-shadow: 0px 0px 0px 7px rgba(255, 255, 255, 0.308);
+    /* background-color: white; */
+}
+
+.signIn h2{
+    color: white;
+    font-weight: 600;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.signIn img{
+    width: 30px;
+    height: 30px;
+}
+
+#UserMyImage{
+    margin-right:10px;
+    width:1.6em;
+    display:none;
+}
+
+.ulHSAE{
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    justify-content:center;
+    color: white;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ulHSAE>a{
+    text-decoration: none;
+    color: white;
+}
+
+#humburger{
+    width: 2em;
+    margin-right:20px;
+    display: none;
+}
+
+.our_tegline{
+    width:100%;
+    align-items: center;
+    margin-top: 200px;
+    text-align: center;
+}
+.our_tegline>h1{
+    align-items: center;
+    color: white;
+    margin:0px 50px 0px 50px;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70px;
+}
+.our_tegline>h3{
+    align-items: center;
+    color: rgb(223, 218, 218);
+    font-size:1.5rem;
+    margin:0px 50px 0px 50px;
+}
+.our_tegline>p{
+    color: white;
+    background-color:rgba(2, 16, 39, 0.799);
+    font-size:1.1rem;
+    margin:50px 50px 0px 50px;
+    padding: 30px;
+    border: 1px solid gray;
+    border-radius: 30px;
+    
+}
+.second_middile_container{
+    color: white;
+}
+
+.tryIt_button {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+    border-radius: 25px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.6em 1.5em;
+    margin: 50px;
+    height: 50px;
+}
+
+.tryIt_button:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+}
+
+.red {
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+    background-color: #12145e;
+    border-radius: 3px;
+}
+
+.cover{
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    color: #12145E;
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@keyframes pulse512 {
+    0% {
+    box-shadow: 0 0 0 0 #05bada66;
+    }
+
+    70% {
+    box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+
+    100% {
+    box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+}
+
+@media (max-width: 850px) {
+    .inputSearchBar{
+        width:20em;
+    }
+    .our_tegline h1{
+        font-size:50px;
+    }
+    .our_tegline h3{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 700px) {
+
+    .inputSearchBar{
+        height: 1.4em; 
+        width:10em;
+    }
+    #logoImg{
+        width:9em;
+    }
+    .signIn{
+        height:2em;
+    }
+    #logoSign{
+        width:1.5em;
+        height:1.5em;
+    }
+    .signIn{
+        width:7.4em ;
+    }
+    .signIn h2{
+        font-size:1.2em;
+    }
+    .Upper-navbar{
+        height:3.5em;
+    }
+    .lower-navbar{
+        top:3.5em;
+        height:30px;
+    }
+    .ulHSAE{
+        font-size: 1em;
+    }
+    .our_tegline h1{
+        font-size:50px;
+    }
+    
+}
+@media (max-width: 450px) {
+
+    .inputSearchBar{
+        display:none;
+        height: 1.4em; 
+        width:10em;
+    }
+    #logoImg{
+        width:7em;
+    }
+    .signIn{
+        height:2em;
+    }
+    #logoSign{
+        width:1.5em;
+        height:1.5em;
+    }
+    .signIn{
+        width:7.4em ;
+    }
+    .signIn h2{
+        font-size:1.2em;
+    }
+    #searchIcons{
+        width: 1.5em;
+        display: block;
+    }
+    /* .search_singIn{
+        margin-right: 20px;
+    } */
+    .search_bar{
+        top: 4.2em;
+        width: 90%;
+        display: block;
+    }
+    /* #UserMyImage{
+        display: block;
+    } */
+    .Upper-navbar{
+        height:3.5em;
+    }
+    .lower-navbar{
+        top:3.5em;
+        height:30px;
+        display: none;
+    }
+    .ulHSAE{
+        font-size: 1em;
+    }
+    #humburger{
+        display: block;
+        width: 1.5em;
+    }
+    .our_tegline h1{
+        font-size:50px;
+    }
+}
+@media (max-width: 300px) {
+
+    .inputSearchBar{
+        display:none;
+        height: 1.4em; 
+        width:10em;
+    }
+    #logoImg{
+        width:7em;
+    }
+    .signIn{
+        height:2em;
+    }
+    #logoSign{
+        width:1.2em;
+        height:1.2em;
+    }
+    .signIn{
+        gap: 5px;
+        height:1.5em;
+        border:2px solid white;
+        width:6em;
+    }
+    .signIn h2{
+        font-size:1em;
+    }
+    .search_singIn{
+        gap: 5px;
+        /* height:; */
+        /* margin-right: 20px; */
+    }
+    #searchIcons{
+        display: block;
+        width: 1em;
+    }
+    .search_bar{
+        display: block;
+    }
+    /* #UserMyImage{
+        display: block;
+    } */
+    .Upper-navbar{
+        height:3.5em;
+    }
+    .lower-navbar{
+        top:3.5em;
+        height:30px;
+        display: none;
+    }
+    .ulHSAE{
+        font-size: 1em;
+    }
+    #humburger{
+        display: block;
+        width: 1.2em;
+        margin-right:10px;
+    }
+    .our_tegline h1{
+        font-size:50px;
+    }
+}
+
